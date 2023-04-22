@@ -1,5 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+}
+
 body {
   background-color: #282828;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Lato', Courier, monospace;
 
+  .container{
+    border: 1px solid #fff;
+    background-color: #57009e;
+    border-radius: 10px;
+    padding: 10px 20px;
 
+    h1{
+      margin-bottom: 20px;
+    }
+
+    p{
+      margin-bottom: 10px;
+    }
+  }
 }

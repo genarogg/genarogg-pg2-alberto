@@ -1,5 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #282828;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Lato", Courier, monospace;
+}
+body .container {
+  border: 1px solid #fff;
+  background-color: #57009e;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+body .container h1 {
+  margin-bottom: 20px;
+}
+body .container p {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

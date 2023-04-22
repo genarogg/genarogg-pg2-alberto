@@ -7,7 +7,7 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "scss": "sass --watch public/css/sass/style.scss public/css/style.css",
-    "browser-sync": "browser-sync start -p localhost:3000  --files='./views/*.ejs, ./public/js/*.js , ./public/css/*.css' --no-ui",
+    "browser-sync": "browser-sync start -p localhost:3000  --files='./views/*.ejs, ./public/js/*.js , ./public/css/sass/style.scss' --no-ui",
     "develop": "cls && concurrently \"npm run dev\" \"npm run browser-sync\"  \"npm run scss\""
   },
   "dependencies": {
