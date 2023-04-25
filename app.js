@@ -3,6 +3,11 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+
+
+var ip = require('ip');
+
+console.log(ip.address())
 /*  */
 var sequelize = require("./db/sqliteConfig");
 var Info = require("./db/modeloInfo");

@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www -p localhost:3002",
+    "dev": "nodemon ./bin/www -p localhost:3000",
     "scss": "sass --watch public/css/sass/style.scss public/css/style.css",
-    "browser-sync": "browser-sync start -p localhost:3002  --files='./views/*.ejs, ./public/js/*.js , ./public/css/*.css' --no-ui",
-    "develop": "cls && concurrently \"npm run dev\"  \"npm run scss\"  "
+    "browser-sync": "browser-sync start -p localhost:3000  --files='./views/*.ejs, ./public/js/*.js , ./public/css/*.css' --no-ui",
+    "develop": "cls && concurrently \"npm run dev\"  \"npm run scss\"  \"npm run browser-sync\""
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -15,6 +15,7 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "ip": "^2.0.0",
     "morgan": "~1.9.1",
     "sass": "^1.62.0",
     "sequelize": "^6.31.0",

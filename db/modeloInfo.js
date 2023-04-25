@@ -13,6 +13,9 @@ Info.init(
     comment: {
       type: DataTypes.STRING,
     },
+    ip: {
+      type: DataTypes.STRING,
+    }
   },
   {
     sequelize,
