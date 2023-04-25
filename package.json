@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
+    "dev": "nodemon ./bin/www -p localhost:3002",
     "scss": "sass --watch public/css/sass/style.scss public/css/style.css",
-    "browser-sync": "browser-sync start -p localhost:3000  --files='./views/*.ejs, ./public/js/*.js , ./public/css/*.css' --no-ui",
-    "develop": "cls && concurrently \"npm run dev\"  \"npm run scss\"  \"npm run browser-sync\""
+    "browser-sync": "browser-sync start -p localhost:3002  --files='./views/*.ejs, ./public/js/*.js , ./public/css/*.css' --no-ui",
+    "develop": "cls && concurrently \"npm run dev\"  \"npm run scss\"  "
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

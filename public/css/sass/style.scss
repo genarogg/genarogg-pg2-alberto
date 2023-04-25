@@ -63,7 +63,7 @@ form {
     height: 24px;
     width: 320px;
 
-    background-color: #521e87 !important;
+    background-color: #521e87;
     border-radius: 4px;
 
     margin-bottom: 10px;
@@ -95,7 +95,7 @@ form {
     input {
       background-color: transparent;
       border: none;
-      outline: none !important;
+      outline: none;
 
       width: 100%;
       margin: 0px 10px;
@@ -108,5 +108,38 @@ form {
       fill: #fff;
       padding-left: 8px;
     }
+  }
+
+  .btn {
+    height: 24px;
+    width: 100%;
+    background-color: #521e87;
+    border: 1px solid transparent;
+    outline: none;
+    height: 36px;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid #d740da;
+    }
+
+    &:focus {
+      animation: opacidad 600ms normal;
+    }
+  }
+}
+
+@keyframes opacidad {
+  0% {
+    background-color: rgba(#43186d, 1);
+  }
+
+  50% {
+    background-color: rgba(#43186d, 0.5);
+  }
+
+  100% {
+    background-color: rgba(#43186d, 1);
   }
 }

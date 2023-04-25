@@ -55,7 +55,7 @@ form .input {
   border: 1px solid transparent;
   height: 24px;
   width: 320px;
-  background-color: #521e87 !important;
+  background-color: #521e87;
   border-radius: 4px;
   margin-bottom: 10px;
 }
@@ -79,7 +79,7 @@ form .input input::placeholder, form .input::placeholder {
 form .input input {
   background-color: transparent;
   border: none;
-  outline: none !important;
+  outline: none;
   width: 100%;
   margin: 0px 10px;
 }
@@ -89,6 +89,34 @@ form .input .ico {
   justify-content: center;
   fill: #fff;
   padding-left: 8px;
+}
+form .btn {
+  height: 24px;
+  width: 100%;
+  background-color: #521e87;
+  border: 1px solid transparent;
+  outline: none;
+  height: 36px;
+  border-radius: 4px;
+}
+form .btn:hover {
+  cursor: pointer;
+  border: 1px solid #d740da;
+}
+form .btn:focus {
+  animation: opacidad 600ms normal;
+}
+
+@keyframes opacidad {
+  0% {
+    background-color: #43186d;
+  }
+  50% {
+    background-color: rgba(67, 24, 109, 0.5);
+  }
+  100% {
+    background-color: #43186d;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

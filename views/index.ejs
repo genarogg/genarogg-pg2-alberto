@@ -4,27 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link
-    href="https://fonts.googleapis.com/css2?family=Crete+Round&amp;family=Lato:wght@400;700&amp;display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&amp;family=Lato:wght@400;700&amp;display=swap"
+      rel="stylesheet"
     />
-    
+
     <title>task1 | Genarogg</title>
     <link rel="stylesheet" href="/css/icomoon/style.css" />
     <link rel="stylesheet" href="/css/style.css" />
-
   </head>
   <body>
     <div class="backgroundHome"></div>
     <div class="backgroundLigth"></div>
     <form action="">
-      <div class="input" id="emailContainer">
+      <div class="input" id="containerName">
         <label for="name"><span class="ico icon-user"></span></label>
         <input type="text" id="name" placeholder="nombre" />
       </div>
 
-      <div class="input" id="emailContainer">
+      <div class="input" id="containerEmail">
         <label for="email"><span class="ico icon-mail"></span></label>
         <input type="email" id="email" placeholder="email" />
       </div>
@@ -38,36 +37,11 @@
         placeholder="mensaje"
         edi
       ></textarea>
+      <button id="btn" class="btn">Enviar</button>
     </form>
 
-    <!-- Envio de datos -->
-    <script>
-      /* funcion para obtener los id */
-      const $ = (id) => {
-        return document.getElementById(id);
-      };
-
-      /* Enviar el formulario */
-      document.getElementById("btn").addEventListener("click", (e) => {
-        e.preventDefault();
-        const url = "/db";
-        let data = {
-          email: $("email").value,
-          name: $("name").value,
-          comment: $("comment").value,
-        };
-
-        fetch(url, {
-          method: "POST", // o 'PUT'
-          body: JSON.stringify(data), // data debe ser `string` o {object}!
-          headers: {
-            "Content-Type": "application/json",
-          },
-        })
-          .then((res) => res.json())
-          .catch((error) => console.error("Error:", error))
-          .then((response) => console.log("Success:", response));
-      });
-    </script>
+    <script src="/js/funtions.js"></script>
+    <script src="/js/stylosForm.js"></script>
+    <script src="/js/enviarForm.js"></script>
   </body>
 </html>
