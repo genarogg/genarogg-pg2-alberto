@@ -3,6 +3,5 @@ const ip = fetch("https://ipapi.co/json/")
     return response.json();
   })
   .then(function (data) {
-    console.log(data.ip);
     localStorage.setItem("ip", data.ip);
   });
